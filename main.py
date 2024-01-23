@@ -7,6 +7,7 @@ from hypercorn.config import Config
 from hypercorn.asyncio import serve
 import asyncio
 from dotenv import load_dotenv
+import transformers
 
 # Dotenv
 try:
@@ -20,6 +21,7 @@ from app.routes.transcbribe_route import router as transcribe_route
 
 # Config
 warnings.filterwarnings("ignore")
+transformers.logging.set_verbosity_error()
 app = FastAPI()
 config = Config()
 config.bind = ["localhost:6000"]
