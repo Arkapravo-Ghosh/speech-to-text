@@ -22,7 +22,7 @@ from app.routes.transcbribe_route import router as transcribe_route
 warnings.filterwarnings("ignore")
 app = FastAPI()
 config = Config()
-config.bind = ["localhost:5000"]
+config.bind = ["localhost:6000"]
 
 
 def main():

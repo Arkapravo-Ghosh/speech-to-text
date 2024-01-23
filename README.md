@@ -2,7 +2,7 @@
 
 ## Description
 
-This is a Simple API built using Python and FastAPI that converts speech to text using OpenAI's Whisper v2 Model from HuggingFace Transformers.
+This is a Simple API built using Python and FastAPI that converts speech to text using OpenAI's Whisper v3 Model from HuggingFace Transformers.
 
 ## Installation
 
