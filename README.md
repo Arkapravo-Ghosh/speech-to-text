@@ -28,6 +28,10 @@ python -m venv .venv
   <summary>Windows</summary>
 
 ```pwsh
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
+
+```pwsh
 .\.venv\Scripts\activate.ps1
 ```
 
@@ -45,7 +49,7 @@ source .venv/bin/activate
 ### Upgrade pip and install the dependencies
 
 ```bash
-pip install -U pip
+python -m pip install -U pip
 ```
 
 ```bash
