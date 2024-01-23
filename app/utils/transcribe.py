@@ -60,7 +60,7 @@ async def transcribe(audio_content_path):
             return_tensors="pt",
         ).input_features
 
-        predicted_ids = model.generate(input_features)
+        predicted_ids = model.generate(input_features, forced_decoder_ids=forced_decoder_ids)
         transcription = processor.batch_decode(predicted_ids, skip_special_tokens=True)[
             0
         ]
