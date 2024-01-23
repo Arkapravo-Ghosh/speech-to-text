@@ -67,7 +67,7 @@ python main.py
 ## Test with given sample audio file
 
 ```bash
-curl -X POST -F "file=@./sample.flac" "http://localhost:5000/transcribe"
+curl -X POST -F "file=@./sample.webm" "http://localhost:5000/transcribe"
 ```
 
-- `/transcribe` (POST) - Transcribes the audio file sent in the request body and returns the transcript as a JSON response. Accepts `audio/wav`, `audio/mp3` or `audio/m4a` content types.
+- `/transcribe` (POST) - Transcribes the audio file sent in the request body and returns the transcript as a JSON response.
