@@ -8,6 +8,7 @@ from hypercorn.asyncio import serve
 import asyncio
 from dotenv import load_dotenv
 import transformers
+import os
 
 # Dotenv
 try:
@@ -24,7 +25,8 @@ warnings.filterwarnings("ignore")
 transformers.logging.set_verbosity_error()
 app = FastAPI()
 config = Config()
-config.bind = ["localhost:6000"]
+port = int(os.getenv("PORT", 6000))
+config.bind = [f"localhost:{port}"]
 
 
 def main():
