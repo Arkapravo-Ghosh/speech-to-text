@@ -12,7 +12,7 @@ datasets==2.16.1
 decorator==5.1.1
 dill==0.3.7
 fastapi==0.109.0
-filelock==3.20.1
+filelock==3.20.3
 frozenlist==1.4.1
 fsspec==2023.10.0
 h11==0.16.0
