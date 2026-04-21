@@ -37,7 +37,7 @@ numba==0.58.1
 numpy==1.26.3
 packaging==23.2
 pandas==2.1.4
-pillow==12.1.1
+pillow==12.2.0
 platformdirs==4.1.0
 pooch==1.8.0
 priority==2.0.0
